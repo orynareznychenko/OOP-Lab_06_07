@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Long.obj",
+            "outputs": [
+                "x64\\Debug\\Long.h_FDC84576D0469473.ifc.dt.module.json",
+                "x64\\Debug\\Long.h_FDC84576D0469473.ifc.dt.d.json",
+                "x64\\Debug\\Long.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\2 семестр\\ООП\\ЛР 6\\ООП РІ-13 Резниченко ЛР-6.7\\ООП РІ-13 Резниченко ЛР-6.7\\Long.h",
+                    "source-path": "d:\\2 семестр\\ооп\\лр 6\\ооп рі-13 резниченко лр-6.7\\ооп рі-13 резниченко лр-6.7\\long.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
