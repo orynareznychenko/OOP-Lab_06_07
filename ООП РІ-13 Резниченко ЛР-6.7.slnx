@@ -4,5 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="UnitTest1/UnitTest1.vcxproj" />
-  <Project Path="ООП РІ-13 Резниченко ЛР-6.7/ООП РІ-13 Резниченко ЛР-6.7.vcxproj" />
+  <Project Path="ООП РІ-13 Резниченко ЛР-6.7/ООП РІ-13 Резниченко ЛР-6.7.vcxproj" Id="5850831c-5063-4e4e-838e-280d6cc9d0f7" />
 </Solution>

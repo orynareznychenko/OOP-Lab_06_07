@@ -1,21 +1,19 @@
 #include <iostream>
-#include "Long.h"
+#include "Long.h" 
 
 using namespace std;
 
 int main() {
     int size;
-    cout << "Enter the number of array elements: ";
-    cin >> size;
-
-    if (size <= 0) {
-        cout << "Error: the array must contain at least 1 element." << endl;
+    cout << "Enter the size of the array: ";
+    if (!(cin >> size) || size <= 0) {
+        cout << "Input error! Size must be greater than 0.\n";
         return 1;
     }
 
     int* a = new int[size];
-    cout << "Enter " << size << " array elements separated by space:\n"
-        << "(Try entering consecutive duplicates, e.g., 2 2 2 -3 -3 5 5 7)\n> ";
+
+    cout << "Enter " << size << " elements (space separated):\n";
     for (int i = 0; i < size; i++) {
         cin >> a[i];
     }
@@ -24,22 +22,26 @@ int main() {
     int* c = new int[size];
     int* d = new int[size];
 
-    int b_size = unique_copy_custom(&a[0], &a[size], &b[0]);
-    cout << "\n1. Result of unique_copy (ALL consecutive duplicates removed):\n   ";
-    for (int i = 0; i < b_size; i++) cout << b[i] << ' ';
-    cout << endl;
+    cout << "\nInitial array:\n";
+    for (int i = 0; i < size; i++) cout << a[i] << " ";
+    cout << "\n\n";
 
-    Even<int> even_pred;
-    int c_size = unique_copy_if_custom(&a[0], &a[size], &c[0], even_pred);
-    cout << "2. Result of unique_copy_if (only EVEN duplicates removed):\n   ";
-    for (int i = 0; i < c_size; i++) cout << c[i] << ' ';
-    cout << endl;
+    int n1 = unique_copy(&a[0], &a[size], &b[0]);
+    cout << "unique_copy (ALL consecutive duplicates removed):\n";
+    for (int i = 0; i < n1; i++) cout << b[i] << " ";
+    cout << "\n\n";
 
-    Negative<int> neg_pred;
-    int d_size = unique_copy_if_custom(&a[0], &a[size], &d[0], neg_pred);
-    cout << "3. Result of unique_copy_if (only NEGATIVE duplicates removed):\n   ";
-    for (int i = 0; i < d_size; i++) cout << d[i] << ' ';
-    cout << endl;
+    Positive<int> pos;
+    int n2 = unique_copy_if(&a[0], &a[size], &c[0], pos);
+    cout << "unique_copy_if with Positive (consecutive duplicates removed ONLY IF POSITIVE):\n";
+    for (int i = 0; i < n2; i++) cout << c[i] << " ";
+    cout << "\n\n";
+
+    Even<int> even;
+    int n3 = unique_copy_if(&a[0], &a[size], &d[0], even);
+    cout << "unique_copy_if with Even (consecutive duplicates removed ONLY IF EVEN):\n";
+    for (int i = 0; i < n3; i++) cout << d[i] << " ";
+    cout << "\n\n";
 
     delete[] a;
     delete[] b;

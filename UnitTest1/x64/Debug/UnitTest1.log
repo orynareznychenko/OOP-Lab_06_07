@@ -1,7 +1,5 @@
 ﻿  Scanning sources for module dependencies...
-  pch.cpp
-  ООП РІ-13 Резниченко ЛР-6.7.cpp
   UnitTest1.cpp
-  Generating Code...
-     Creating library D:\2 семестр\ООП\ЛР 6\ООП РІ-13 Резниченко ЛР-6.7\x64\Debug\UnitTest1.lib and object D:\2 семестр\ООП\ЛР 6\ООП РІ-13 Резниченко ЛР-6.7\x64\Debug\UnitTest1.exp
+D:\2 семестр\ООП\ЛР 6\ООП РІ-13 Резниченко ЛР-6.7\UnitTest1\UnitTest1.cpp(17,24): warning C4101: 'c': unreferenced local variable
+D:\2 семестр\ООП\ЛР 6\ООП РІ-13 Резниченко ЛР-6.7\UnitTest1\UnitTest1.cpp(17,31): warning C4101: 'd': unreferenced local variable
   UnitTest1.vcxproj -> D:\2 семестр\ООП\ЛР 6\ООП РІ-13 Резниченко ЛР-6.7\x64\Debug\UnitTest1.dll

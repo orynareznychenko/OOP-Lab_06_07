@@ -156,6 +156,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\ООП РІ-13 Резниченко ЛР-6.7\Long.cpp" />
     <ClCompile Include="..\ООП РІ-13 Резниченко ЛР-6.7\ООП РІ-13 Резниченко ЛР-6.7.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -24,6 +24,9 @@
     <ClCompile Include="..\ООП РІ-13 Резниченко ЛР-6.7\ООП РІ-13 Резниченко ЛР-6.7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ООП РІ-13 Резниченко ЛР-6.7\Long.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

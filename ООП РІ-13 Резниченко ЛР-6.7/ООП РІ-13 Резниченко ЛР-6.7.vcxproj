@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Long.cpp" />
     <ClCompile Include="Long.h" />
     <ClCompile Include="ООП РІ-13 Резниченко ЛР-6.7.cpp" />
   </ItemGroup>
